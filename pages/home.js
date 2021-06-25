@@ -1,7 +1,5 @@
-
-import React , { useState } from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
-import Footer from '../components/footer';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import HeaderHome from '../components/headerH' ;
 import ListImage from '../components/listImages';
 
@@ -17,14 +15,9 @@ export default function Home() {
           </View>
           <ListImage />
        </View>
-       
        <View>
-
-    <Footer />
    </View>
   </View>
-  
-    
   );
 }
 

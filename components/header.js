@@ -1,20 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View , TextInput , ScrollView ,Button , TouchableOpacity} from 'react-native';
-//import TextInput from 'react-native-textinput-with-icons'
+import { StyleSheet, Text, View , TextInput} from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons'; 
-import ListIcon from './listIcons'
-import { Search } from '@material-ui/icons';
-import { createStackNavigator} from '@react-navigation/stack';
-import { NavigationContainer , useNavigation  } from '@react-navigation/native';
+import { useNavigation  } from '@react-navigation/native';
 
-import { Height} from '@material-ui/icons';
-import Details from '../pages/details';
 
 export default function Header( { details , titre } ){
   const navigation = useNavigation();
-    const changeHandler = () => {
-        console.log('Hi');
- }
     return(
    <View>
        <Text style={styles.title}>{titre}</Text>
@@ -26,7 +17,6 @@ export default function Header( { details , titre } ){
             <TextInput
 
            style={styles.input}
-            onChangeText={changeHandler}
             placeholder=' search'
             placeholderTextColor='#FFFCFC'
             />
